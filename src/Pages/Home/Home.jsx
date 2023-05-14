@@ -4,6 +4,7 @@ import { FaInstagram, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Lottie from "lottie-react";
 import animate from "../../ani.json";
+import curry from "../../media/ReactResume.pdf";
 
 function Home() {
   return (
@@ -37,9 +38,25 @@ function Home() {
       </div>
       <div className="down">
         <div className="bio">
-          <h1>Hello!</h1>
-          <h1>I'm Sidhant </h1>
-          <p class="shining">Fullstack Web Devloper</p>
+          <div className="frontcon">
+            <h1>Hello!</h1>
+            <h1>I'm Sidhant </h1>
+            <p class="shining">
+              Fullstack <br /> Web Devloper
+            </p>
+          </div>
+          <div className="buttons">
+            <div className="hire">
+              <a href="https://www.linkedin.com/in/sidhant-sadyal-233933237/">
+                Hire me
+              </a>
+            </div>
+            <div className="cv">
+              <a href={curry} download>
+                Download CV
+              </a>
+            </div>
+          </div>
         </div>
         <div className="card" style={{ width: "50%" }}>
           <Lottie animationData={animate}></Lottie>

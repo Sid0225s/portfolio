@@ -7,7 +7,7 @@ function About() {
       <div className={styles.card1}>
         <h2>About me</h2>
         <p>
-          Hello, <br /> My Name is Sidhant Sadyal.I am freom Una,Himachal
+          Hello, <br /> My Name is Sidhant Sadyal.I am from Una,Himachal
           Pradesh.
         </p>
         <div className={styles.pro}>

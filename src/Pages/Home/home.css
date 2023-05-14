@@ -12,10 +12,18 @@ body {
 .navbar {
   display: flex;
   backdrop-filter: blur(5px);
+  position: fixed;
+  width: 100%;
   font-size: 1.6rem;
-  background: linear-gradient(to right, red, black, red);
+  background: linear-gradient(
+    to right,
+    rgb(51, 113, 237),
+    black,
+    rgb(51, 113, 237)
+  );
   border-radius: 3rem;
   margin: 1rem 0;
+  z-index: 1;
   padding: 1.5rem 2rem;
 }
 /* .navham {
@@ -55,6 +63,7 @@ body {
 }
 .bio {
   color: white;
+  margin: 10rem 2rem;
 }
 .shining {
   position: relative;
@@ -72,21 +81,60 @@ body {
 
 .down {
   display: flex;
+  justify-content: center;
   padding: 0 4rem;
   align-items: center;
 }
 
 .down div {
-  font-size: 1.7rem;
-}
-.bio {
   margin: 2rem;
 }
+.frontcon {
+  font-size: 1.7rem;
+}
+
 .ham svg {
   display: none;
   color: white;
   font-size: 2rem;
 }
+.buttons {
+  display: flex;
+  margin: 2rem 0;
+}
+.buttons div {
+  border: 2px black solid;
+  margin: 1.5rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3rem;
+  transition: 0.2s;
+}
+.buttons .hire a {
+  text-decoration: none;
+  font: 1rem;
+  color: white;
+}
+.buttons .cv a {
+  text-decoration: none;
+  color: rgb(51, 113, 237);
+}
+.hire {
+  background-color: rgb(51, 113, 237);
+}
+.hire:hover {
+  transform: scale(1.2);
+}
+.cv {
+  background: white;
+}
+
+.cv:hover {
+  transform: scale(1.2);
+}
+
 @keyframes animate {
   0% {
     background-position: -500%;

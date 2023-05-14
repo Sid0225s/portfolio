@@ -1,44 +1,49 @@
 import React from "react";
-import styles from "./Project.module.css";
-import sid from "../../media/sidA.jpg";
+import Styles from "./Project.module.css";
+import sid from "../../media/Screenshot (54).png";
 
 function Project() {
   return (
-    <div className={styles.project}>
+    <div className={Styles.container}>
       <h1>Projects</h1>
-      <div className={styles.box}>
-        <div className={styles.card}>
-          <div className={styles.imgBx}>
-            <img src={sid} alt="" />
-          </div>
-          <div className={styles.details}>
-            <h2>
-              SomeOne Famous
-              <br />
-              <span>Director</span>
-            </h2>
-          </div>
-        </div>
-
-        <div className={styles.card}>
-          <div className={styles.imgBx}></div>
-          <div className={styles.details}>
-            <h2>
-              SomeOne Famous
-              <br />
-              <span>Producer</span>
-            </h2>
+      <div className={Styles.cards}>
+        <div className={Styles.card}>
+          <img src={sid} alt="" />
+          <div className={Styles.cardCon}>
+            <h2>React Calculator</h2>
+            <p>
+              This is a Simple calculator make by using React Library using
+              UseReducer Hook.It will follow BODMAS rule.
+            </p>
+            <div className={Styles.but}>
+              <a href="https://sidcalculator.netlify.app/">VISIT</a>
+            </div>
           </div>
         </div>
-
-        <div className={styles.card}>
-          <div className={styles.imgBx}></div>
-          <div className={styles.details}>
-            <h2>
-              SomeOne Famous
-              <br />
-              <span>Actor</span>
-            </h2>
+        <div className={Styles.card}>
+          <img src={sid} alt="" />
+          <div className={Styles.cardCon}>
+            <h2>React Calculator</h2>
+            <p>
+              This is a Simple calculator make by using React Library using
+              UseReducer Hook.It will follow BODMAS rule.
+            </p>
+            <div className={Styles.but}>
+              <a href="https://sidcalculator.netlify.app/">VISIT</a>
+            </div>
+          </div>
+        </div>
+        <div className={Styles.card}>
+          <img src={sid} alt="" />
+          <div className={Styles.cardCon}>
+            <h2>React Calculator</h2>
+            <p>
+              This is a Simple calculator make by using React Library using
+              UseReducer Hook.It will follow BODMAS rule.
+            </p>
+            <div className={Styles.but}>
+              <a href="https://sidcalculator.netlify.app/">VISIT</a>
+            </div>
           </div>
         </div>
       </div>
