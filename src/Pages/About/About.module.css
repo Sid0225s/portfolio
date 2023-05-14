@@ -28,6 +28,8 @@
 }
 .card1 h2 {
   text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
 }
 
 .card1::before {

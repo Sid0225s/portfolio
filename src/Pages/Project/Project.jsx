@@ -4,7 +4,7 @@ import sid from "../../media/Screenshot (54).png";
 
 function Project() {
   return (
-    <div className={Styles.container}>
+    <div className={Styles.container} id="project">
       <h1>Projects</h1>
       <div className={Styles.cards}>
         <div className={Styles.card}>

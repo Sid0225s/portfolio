@@ -63,7 +63,8 @@ body {
 }
 .bio {
   color: white;
-  margin: 10rem 2rem;
+  margin: 12rem 2rem 10rem 8rem;
+  width: 50%;
 }
 .shining {
   position: relative;
@@ -86,11 +87,8 @@ body {
   align-items: center;
 }
 
-.down div {
-  margin: 2rem;
-}
 .frontcon {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 .ham svg {
@@ -162,6 +160,9 @@ body {
   .nav a {
     padding: 0 1.5rem;
   }
+  .bio {
+    margin: 10rem 2rem 10rem 4rem;
+  }
 }
 @media (max-width: 1150px) {
   .navbar {
@@ -197,5 +198,19 @@ body {
     position: absolute;
     top: 21px;
     left: 40px;
+  }
+  .down {
+    flex-direction: column;
+  }
+  .bio {
+    width: 100%;
+    margin: 10rem 2rem 0rem 2rem;
+    text-align: center;
+  }
+  .buttons {
+    justify-content: center;
+  }
+  .card {
+    display: none;
   }
 }

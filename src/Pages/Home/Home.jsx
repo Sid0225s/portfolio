@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./home.css";
 import { FaInstagram, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -8,14 +9,14 @@ import curry from "../../media/ReactResume.pdf";
 
 function Home() {
   return (
-    <div className="home">
+    <div className="home" id="home">
       <div class="navbar navham">
         <div className="nav navh">
-          <a href="#home">Home</a>
-          <a href="#projects">Projects</a>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
+          <Link to="home">Home</Link>
+          <Link to="project">Projects</Link>
+          <Link to="about">About</Link>
+          <Link to="services">Services</Link>
+          <Link to="contact">Contact</Link>
         </div>
 
         <div className="social">

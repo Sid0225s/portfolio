@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div>
       <div className={Styles.foot}>
-        <h3> Site Created by Sidhant </h3>
+        <h3>Created by Sidhant Sadyal </h3>
       </div>
     </div>
   );
