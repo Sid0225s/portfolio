@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 
 function Project() {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 7000 });
   }, []);
   return (
     <div className={Styles.container} id="project">
