@@ -13,13 +13,13 @@ function Home() {
   return (
     <div className="home" id="home">
       <div className="navbar">
-        <div className={nav ? "navh" : "nav"} onClick={() => setNav(false)}>
+        <ul className={nav ? "navh" : "nav"} onClick={() => setNav(false)}>
           <Link to="home">Home</Link>
           <Link to="project">Projects</Link>
           <Link to="about">About</Link>
           <Link to="services">Services</Link>
           <Link to="contact">Contact</Link>
-        </div>
+        </ul>
 
         <div className="social">
           <a href="https://www.linkedin.com/in/sidhant-sadyal-233933237/">

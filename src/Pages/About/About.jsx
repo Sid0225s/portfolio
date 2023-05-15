@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./About.module.css";
 import sidphoto from "../../media/sidA.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function About() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
-    <div className={styles.about} id="about">
+    <div className={styles.about} data-aos="zoom-in-up" id="about">
       <div className={styles.card1}>
         <h2>About me</h2>
         <div className={styles.photocont}>

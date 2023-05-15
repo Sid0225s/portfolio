@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Styles from "./Services.module.css";
 import { DiNodejs, DiCss3 } from "react-icons/di";
 import { FaCopyright } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Services() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <div>
       <div className={Styles.Services} id="services">
-        <h2>Services</h2>
+        <h2 data-aos="zoom-in">Services</h2>
         <div className={Styles.row}>
-          <div class={Styles.column}>
+          <div class={Styles.column} data-aos="zoom-in">
             <div class={Styles.card}>
               <div class={Styles.iconwrap}>
                 <i>
@@ -19,7 +24,7 @@ function Services() {
               <h3>Frontend Developement</h3>
             </div>
           </div>
-          <div class={Styles.column}>
+          <div class={Styles.column} data-aos="zoom-in">
             <div class={Styles.card}>
               <div class={Styles.iconwrap}>
                 <i>
@@ -29,7 +34,7 @@ function Services() {
               <h3>Backend Developement</h3>
             </div>
           </div>
-          <div class={Styles.column}>
+          <div class={Styles.column} data-aos="zoom-in">
             <div class={Styles.card}>
               <div class={Styles.iconwrap}>
                 <i>
