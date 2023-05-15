@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import { Link } from "react-scroll";
 import "./home.css";
 import { FaInstagram, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
@@ -8,10 +9,11 @@ import animate from "../../ani.json";
 import curry from "../../media/ReactResume.pdf";
 
 function Home() {
+  const [nav, setNav] = useState(false);
   return (
     <div className="home" id="home">
-      <div class="navbar navham">
-        <div className="nav navh">
+      <div className="navbar">
+        <div className={nav ? "navh" : "nav"} onClick={() => setNav(false)}>
           <Link to="home">Home</Link>
           <Link to="project">Projects</Link>
           <Link to="about">About</Link>
@@ -33,7 +35,7 @@ function Home() {
             <FaEnvelope />
           </a>
         </div>
-        <div className="ham">
+        <div className="ham" onClick={() => setNav(!nav)}>
           <GiHamburgerMenu />
         </div>
       </div>

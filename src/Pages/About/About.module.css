@@ -16,7 +16,7 @@
 .card1 {
   background: #191c29;
   width: var(--card-width);
-  height: var(--card-height);
+  min-height: var(--card-height);
   padding: 3px;
   position: relative;
   border-radius: 6px;
@@ -87,6 +87,7 @@
 }
 .button {
   text-align: center;
+  margin: 1.5rem;
 }
 .button a {
   text-decoration: none;
@@ -99,11 +100,53 @@
   background-color: white;
   color: rgb(51, 113, 237);
 }
+.photocont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.photo {
+  width: 50%;
+}
+.photo img {
+  width: 60%;
+  border-radius: 10%;
+  transition: 0.2s;
+}
+.photo img:hover {
+  transform: scale(1.2);
+}
 @keyframes spin {
   0% {
     --rotate: 0deg;
   }
   100% {
     --rotate: 360deg;
+  }
+}
+@media (max-width: 800px) {
+  .photo img {
+    width: 70%;
+  }
+}
+@media (max-width: 600px) {
+  .photo img {
+    width: 85%;
+  }
+}
+@media (max-width: 540px) {
+  .pro {
+    flex-direction: column;
+  }
+  .card1 {
+    font-size: 1rem;
+    margin: 4rem 1rem;
+  }
+  .photocont {
+    flex-direction: column-reverse;
+  }
+  .photo img {
+    width: 100%;
   }
 }

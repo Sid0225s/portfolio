@@ -26,12 +26,22 @@ body {
   z-index: 1;
   padding: 1.5rem 2rem;
 }
-/* .navham {
-  flex-direction: column-reverse;
-}
+
 .navh {
+  display: flex;
   flex-direction: column;
-} */
+  color: white;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+.navh a {
+  margin: 2rem;
+  transition: 0.2s ease;
+}
+.navh a:hover {
+  transform: scale(1.3);
+  color: blanchedalmond;
+}
 .nav {
   display: flex;
   align-items: center;
@@ -190,8 +200,17 @@ body {
   .nav {
     display: none;
   }
+  .social {
+    padding: 0;
+  }
+  .home {
+    height: 85vh;
+  }
   .navbar {
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
   .ham svg {
     display: block;
@@ -212,5 +231,18 @@ body {
   }
   .card {
     display: none;
+  }
+}
+@media (max-width: 550px) {
+  .frontcon {
+    font-size: 1.2rem;
+  }
+  .down {
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 450px) {
+  .buttons div {
+    margin: 0.5rem;
   }
 }

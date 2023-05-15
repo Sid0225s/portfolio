@@ -1,6 +1,7 @@
 import React from "react";
 import Styles from "./Services.module.css";
-import { Gi3DHammer } from "react-icons/gi";
+import { DiNodejs, DiCss3 } from "react-icons/di";
+import { FaCopyright } from "react-icons/fa";
 
 function Services() {
   return (
@@ -12,42 +13,30 @@ function Services() {
             <div class={Styles.card}>
               <div class={Styles.iconwrap}>
                 <i>
-                  <Gi3DHammer />
+                  <DiCss3 />
                 </i>
               </div>
-              <h3>Service Heading</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Quisquam consequatur necessitatibus eaque.
-              </p>
+              <h3>Frontend Developement</h3>
             </div>
           </div>
           <div class={Styles.column}>
             <div class={Styles.card}>
               <div class={Styles.iconwrap}>
                 <i>
-                  <Gi3DHammer />
+                  <DiNodejs />
                 </i>
               </div>
-              <h3>Service Heading</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Quisquam consequatur necessitatibus eaque.
-              </p>
+              <h3>Backend Developement</h3>
             </div>
           </div>
           <div class={Styles.column}>
             <div class={Styles.card}>
               <div class={Styles.iconwrap}>
                 <i>
-                  <Gi3DHammer />
+                  <FaCopyright />
                 </i>
               </div>
-              <h3>Service Heading</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Quisquam consequatur necessitatibus eaque.
-              </p>
+              <h3>CPP Developement</h3>
             </div>
           </div>
         </div>
