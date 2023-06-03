@@ -45,7 +45,7 @@ function Home() {
             <h1>Hello!</h1>
             <h1>I'm Sidhant </h1>
             <p class="shining">
-              Fullstack <br /> Web Devloper
+              Fullstack <br /> Web Developer
             </p>
           </div>
           <div className="buttons">
