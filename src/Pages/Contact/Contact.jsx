@@ -12,15 +12,41 @@ function Contact() {
       <div className={styles.contactbox} data-aos="fade-up">
         <div className={styles.right}>
           <h2>Contact me</h2>
-          <input type="text" className={styles.field} placeholder="Your Name" />
-          <input
-            type="text"
-            className={styles.field}
-            placeholder="Your Email"
-          />
-          <input type="text" className={styles.field} placeholder="Phone" />
-          <textarea placeholder="Message" className={styles.field}></textarea>
-          <button className={styles.btn}>Send</button>
+          <form action="https://formspree.io/f/myyaqbwj" method="POST">
+            <input
+              type="text"
+              name="Name"
+              className={styles.field}
+              placeholder="Your Name"
+              required
+            />
+            <input
+              required
+              name="email"
+              type="email"
+              className={styles.field}
+              placeholder="Your Email"
+            />
+            <input
+              type="text"
+              name="Phone no."
+              required
+              className={styles.field}
+              placeholder="Phone"
+            />
+            <textarea
+              required
+              name="message"
+              placeholder="Message"
+              className={styles.field}
+            ></textarea>
+            <input
+              type="submit"
+              value="Send"
+              placeholder="Send"
+              className={styles.btn}
+            ></input>
+          </form>
         </div>
       </div>
     </div>
